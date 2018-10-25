@@ -226,7 +226,7 @@
             this.box10.Size = new System.Drawing.Size(100, 21);
             this.box10.TabIndex = 22;
             this.box10.TabStop = false;
-            this.box10.Text = "151";
+            this.box10.Text = "5";
             this.box10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
