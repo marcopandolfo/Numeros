@@ -50,8 +50,12 @@
             this.box6 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Start = new System.Windows.Forms.Button();
-            this.Stop = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.Clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // box1
@@ -377,24 +381,13 @@
             // Start
             // 
             this.Start.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Start.Location = new System.Drawing.Point(325, 442);
+            this.Start.Location = new System.Drawing.Point(306, 433);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(130, 50);
             this.Start.TabIndex = 23;
             this.Start.Text = "Start";
             this.Start.UseVisualStyleBackColor = true;
             this.Start.Click += new System.EventHandler(this.Start_Click);
-            // 
-            // Stop
-            // 
-            this.Stop.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Stop.Location = new System.Drawing.Point(476, 442);
-            this.Stop.Name = "Stop";
-            this.Stop.Size = new System.Drawing.Size(130, 50);
-            this.Stop.TabIndex = 24;
-            this.Stop.Text = "Stop";
-            this.Stop.UseVisualStyleBackColor = true;
-            this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 
             // label11
             // 
@@ -406,13 +399,76 @@
             this.label11.TabIndex = 25;
             this.label11.Text = "Contador: 123923";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(69, 433);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(52, 23);
+            this.checkBox1.TabIndex = 26;
+            this.checkBox1.Text = "100";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Location = new System.Drawing.Point(142, 433);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(68, 23);
+            this.checkBox3.TabIndex = 27;
+            this.checkBox3.Text = "10000";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Location = new System.Drawing.Point(69, 470);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(52, 23);
+            this.checkBox2.TabIndex = 28;
+            this.checkBox2.Text = "500";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.Location = new System.Drawing.Point(142, 470);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(68, 23);
+            this.checkBox4.TabIndex = 29;
+            this.checkBox4.Text = "20000";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // Clear
+            // 
+            this.Clear.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clear.Location = new System.Drawing.Point(442, 433);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(130, 50);
+            this.Clear.TabIndex = 30;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 504);
+            this.Controls.Add(this.Clear);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.Stop);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.box10);
             this.Controls.Add(this.label6);
@@ -467,8 +523,12 @@
         private System.Windows.Forms.TextBox box6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.Button Stop;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.Button Clear;
     }
 }
 

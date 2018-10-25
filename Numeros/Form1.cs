@@ -31,9 +31,9 @@ namespace Numeros
             InitializeComponent();
         }
 
-        void Principal()
+        void Principal(int valor)
         {
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < valor; i++)
             {
                 box1.Text = one.ToString();
                 box2.Text = two.ToString();
@@ -102,15 +102,31 @@ namespace Numeros
                 }
             }
         }
-
-        void Stop_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         void Start_Click(object sender, EventArgs e)
         {
-            Principal();
+            int valor = 0;
+            if(checkBox1.Checked)
+            {
+                valor = 100;
+            }
+            if(checkBox2.Checked)
+            {
+                valor = 500;
+            }
+            if(checkBox3.Checked)
+            {
+                valor = 10000;
+            }
+            if(checkBox4.Checked)
+            {
+                valor = 20000;
+            }
+            Principal(valor);
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
