@@ -12,10 +12,6 @@ namespace Numeros
 {
     public partial class Form1 : Form
     {
-        int numero = 121;
-        Console.WriteLine(numero);
-
-
         Random rdn = new Random();
 
         int one = 0;
@@ -32,10 +28,9 @@ namespace Numeros
         public Form1()
         {
             InitializeComponent();
-            Principal();
         }
 
-        private void Principal()
+        void Principal()
         {
             box1.Text = one.ToString();
             box2.Text = two.ToString();
@@ -106,14 +101,13 @@ namespace Numeros
 
         }
 
-        private void Stop_Click(object sender, EventArgs e)
+        void Stop_Click(object sender, EventArgs e)
         {
-            
         }
 
-        private void Start_Click(object sender, EventArgs e)
+        void Start_Click(object sender, EventArgs e)
         {
-            
+            Principal();
         }
     }
 }
