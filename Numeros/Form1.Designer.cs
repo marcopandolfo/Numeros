@@ -50,7 +50,7 @@
             this.box6 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Start = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Stop = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -385,15 +385,16 @@
             this.Start.UseVisualStyleBackColor = true;
             this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
-            // button2
+            // Stop
             // 
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(476, 442);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 50);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Stop";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Stop.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Stop.Location = new System.Drawing.Point(476, 442);
+            this.Stop.Name = "Stop";
+            this.Stop.Size = new System.Drawing.Size(130, 50);
+            this.Stop.TabIndex = 24;
+            this.Stop.Text = "Stop";
+            this.Stop.UseVisualStyleBackColor = true;
+            this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 
             // label11
             // 
@@ -411,7 +412,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 504);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Stop);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.box10);
             this.Controls.Add(this.label6);
@@ -466,7 +467,7 @@
         private System.Windows.Forms.TextBox box6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Stop;
         private System.Windows.Forms.Label label11;
     }
 }
