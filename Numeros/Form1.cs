@@ -128,5 +128,10 @@ namespace Numeros
         {
 
         }
+
+
+        //Fazer o botao clear
+        //Colocar qual textbox tem mais pontos
+        //Colocar o contador
     }
 }
