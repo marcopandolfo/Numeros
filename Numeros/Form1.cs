@@ -13,6 +13,8 @@ namespace Numeros
 {
     public partial class Form1 : Form
     {
+        int contador = 0;
+
         Random rdn = new Random();
 
         int one = 0;
@@ -24,7 +26,7 @@ namespace Numeros
         int seven = 0;
         int eight = 0;
         int nine = 0;
-        int ten = 12;
+        int ten = 0;
 
         public Form1()
         {
@@ -35,6 +37,9 @@ namespace Numeros
         {
             for (int i = 0; i < valor; i++)
             {
+                contador++;
+                lblContador.Text = $"Contador: {contador}";
+
                 box1.Text = one.ToString();
                 box2.Text = two.ToString();
                 box3.Text = three.ToString();
@@ -100,6 +105,10 @@ namespace Numeros
                         box10.Text = ten.ToString();
                         break;
                 }
+
+
+                // Mostrar a textbox que tem o maior valor
+
             }
         }
         void Start_Click(object sender, EventArgs e)
@@ -115,23 +124,45 @@ namespace Numeros
             }
             if(checkBox3.Checked)
             {
-                valor = 10000;
+                valor = 1000;
             }
             if(checkBox4.Checked)
             {
-                valor = 20000;
+                valor = 2000;
             }
             Principal(valor);
         }
 
         private void Clear_Click(object sender, EventArgs e)
         {
+            // Resetar contador
+            contador = 0;
 
+            // Reseta as variaveis 
+            int one = 0;
+            int two = 0;
+            int three = 0;
+            int four = 0;
+            int five = 0;
+            int six = 0;
+            int seven = 0;
+            int eight = 0;
+            int nine = 0;
+            int ten = 0;
+
+            // Reseta os textos
+            box1.Text = one.ToString();
+            box2.Text = two.ToString();
+            box3.Text = three.ToString();
+            box4.Text = four.ToString();
+            box5.Text = five.ToString();
+            box6.Text = six.ToString();
+            box7.Text = seven.ToString();
+            box8.Text = eight.ToString();
+            box9.Text = nine.ToString();
+            box10.Text = ten.ToString();
         }
 
-
-        //Fazer o botao clear
         //Colocar qual textbox tem mais pontos
-        //Colocar o contador
     }
 }

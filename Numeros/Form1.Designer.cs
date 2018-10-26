@@ -50,7 +50,7 @@
             this.box6 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Start = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblContador = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -70,7 +70,7 @@
             this.box1.Size = new System.Drawing.Size(100, 21);
             this.box1.TabIndex = 4;
             this.box1.TabStop = false;
-            this.box1.Text = "5";
+            this.box1.Text = "0";
             this.box1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
@@ -102,7 +102,7 @@
             this.box2.Size = new System.Drawing.Size(100, 21);
             this.box2.TabIndex = 6;
             this.box2.TabStop = false;
-            this.box2.Text = "5";
+            this.box2.Text = "0";
             this.box2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
@@ -134,7 +134,7 @@
             this.box3.Size = new System.Drawing.Size(100, 21);
             this.box3.TabIndex = 8;
             this.box3.TabStop = false;
-            this.box3.Text = "5";
+            this.box3.Text = "0";
             this.box3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
@@ -166,7 +166,7 @@
             this.box4.Size = new System.Drawing.Size(100, 21);
             this.box4.TabIndex = 10;
             this.box4.TabStop = false;
-            this.box4.Text = "5";
+            this.box4.Text = "0";
             this.box4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -198,7 +198,7 @@
             this.box5.Size = new System.Drawing.Size(100, 21);
             this.box5.TabIndex = 12;
             this.box5.TabStop = false;
-            this.box5.Text = "5";
+            this.box5.Text = "0";
             this.box5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
@@ -230,7 +230,7 @@
             this.box10.Size = new System.Drawing.Size(100, 21);
             this.box10.TabIndex = 22;
             this.box10.TabStop = false;
-            this.box10.Text = "5";
+            this.box10.Text = "0";
             this.box10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -262,7 +262,7 @@
             this.box9.Size = new System.Drawing.Size(100, 21);
             this.box9.TabIndex = 20;
             this.box9.TabStop = false;
-            this.box9.Text = "5";
+            this.box9.Text = "0";
             this.box9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
@@ -294,7 +294,7 @@
             this.box8.Size = new System.Drawing.Size(100, 21);
             this.box8.TabIndex = 18;
             this.box8.TabStop = false;
-            this.box8.Text = "5";
+            this.box8.Text = "0";
             this.box8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
@@ -326,7 +326,7 @@
             this.box7.Size = new System.Drawing.Size(100, 21);
             this.box7.TabIndex = 16;
             this.box7.TabStop = false;
-            this.box7.Text = "5";
+            this.box7.Text = "0";
             this.box7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
@@ -358,7 +358,7 @@
             this.box6.Size = new System.Drawing.Size(100, 21);
             this.box6.TabIndex = 14;
             this.box6.TabStop = false;
-            this.box6.Text = "5";
+            this.box6.Text = "0";
             this.box6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
@@ -380,6 +380,7 @@
             // 
             // Start
             // 
+            this.Start.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Start.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Start.Location = new System.Drawing.Point(306, 433);
             this.Start.Name = "Start";
@@ -389,20 +390,21 @@
             this.Start.UseVisualStyleBackColor = true;
             this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
-            // label11
+            // lblContador
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(688, 466);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(172, 26);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "Contador: 123923";
+            this.lblContador.AutoSize = true;
+            this.lblContador.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContador.Location = new System.Drawing.Point(688, 457);
+            this.lblContador.Name = "lblContador";
+            this.lblContador.Size = new System.Drawing.Size(97, 26);
+            this.lblContador.TabIndex = 25;
+            this.lblContador.Text = "Contador:";
             // 
             // checkBox1
             // 
             this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(69, 433);
             this.checkBox1.Name = "checkBox1";
@@ -415,18 +417,20 @@
             // 
             this.checkBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox3.AutoSize = true;
+            this.checkBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.Location = new System.Drawing.Point(142, 433);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(68, 23);
+            this.checkBox3.Size = new System.Drawing.Size(60, 23);
             this.checkBox3.TabIndex = 27;
-            this.checkBox3.Text = "10000";
+            this.checkBox3.Text = "1000";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
             this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox2.AutoSize = true;
+            this.checkBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.Location = new System.Drawing.Point(69, 470);
             this.checkBox2.Name = "checkBox2";
@@ -439,16 +443,18 @@
             // 
             this.checkBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox4.AutoSize = true;
+            this.checkBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox4.Location = new System.Drawing.Point(142, 470);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(68, 23);
+            this.checkBox4.Size = new System.Drawing.Size(60, 23);
             this.checkBox4.TabIndex = 29;
-            this.checkBox4.Text = "20000";
+            this.checkBox4.Text = "2000";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // Clear
             // 
+            this.Clear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Clear.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clear.Location = new System.Drawing.Point(442, 433);
             this.Clear.Name = "Clear";
@@ -468,7 +474,7 @@
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblContador);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.box10);
             this.Controls.Add(this.label6);
@@ -523,7 +529,7 @@
         private System.Windows.Forms.TextBox box6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblContador;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
